@@ -1,0 +1,175 @@
+body {
+    background-color: #252222;
+}
+
+.menubtn {
+    position: fixed;
+    z-index: 100;
+    margin-left: 2em;
+    margin-top: 2em;
+    background-color: #252222 behavior: url(PIE.htc);
+    color: #252222;
+    width: 2.5em;
+    height: 2.5em;
+}
+
+#menu {
+    background-color: #5d5f60;
+    position: fixed;
+    opacity: 0;
+    list-style-type: none;
+    padding-top: 5.5em;
+    margin-top: 0;
+    margin-right: 0;
+    width: 13em;
+    height: 27.5em;
+    border-bottom-right-radius: 5px;
+    z-index: 10;
+}
+
+#menu a {
+    line-height: 2em;
+    color: #444;
+    margin-left: 1em;
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    text-transform: uppercase;
+}
+
+.scrollbtn {
+    opacity: 1;
+    text-decoration: none;
+    width: 4em;
+    height: 4em;
+    position: absolute;
+    bottom: 2em;
+    width: 100%;
+}
+
+.profile-img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    behavior: url(PIE.htc);
+    background-image: url("img/profile1.png");
+    width: 30%;
+    padding-top: 30%;
+    /*background: rgb(82, 255, 203);*/
+    margin: auto;
+    margin-bottom: 2em;
+    background-size: contain;
+    z-index: -100;
+}
+
+.title {
+    text-align: center;
+    margin-top: .4em;
+    color: white;
+    font-size: 6em;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.subtitle {
+    color: rgb(203, 203, 203);
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-bottom: 10%;
+}
+
+.subhead {
+    text-align: center;
+    margin-top: .4em;
+    margin-bottom: 1em;
+    color: white;
+    font-size: 6em;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.aboutTitle {
+    text-align: center;
+    color: white;
+    font-size: 6em;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+}
+
+.aboutDescription {
+    color: rgb(203, 203, 203);
+    font-size: 1.4em;
+    margin-bottom: 10%;
+    text-align: center;
+}
+
+.aboutMe {
+    margin-top: 20em;
+    opacity: 0;
+}
+
+.skills {
+    opacity: 0;
+}
+
+.hackathons {
+    opacity: 0;
+}
+
+.projects {
+    opacity: 0;
+}
+
+.awards {
+    opacity: 0;
+}
+
+.new {
+	opacity: 0;
+}
+
+.form {
+	opacity: 0;
+}
+
+.card {}
+
+.image {
+    height: 13em;
+}
+
+.image img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.projectRow {
+    margin-top: 0;
+    height: 15em;
+}
+
+.rowText {
+    min-height: 15em;
+    /*    height: 15em;*/
+}
+
+.rowTitle {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 2em;
+    color: aliceblue;
+}
+
+.rowDescription {
+    margin-top: 0;
+    font-size: 1em;
+    color: aliceblue;
+}
+
+.moreBtn {
+    opacity: 0;
+}
+
+.card-image img {
+    max-height: 10%;
+    margin-bottom: 10em;
+}
