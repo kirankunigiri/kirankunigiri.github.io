@@ -148,7 +148,7 @@ $(document).ready(function() {
         message = "Hey Kiran," + '\r\n\r\n' + message + '\r\n\r\n' + "From," + '\r\n' + firstName + " " + lastName;
         message = encodeURIComponent(message);
 
-        var link = 'mailto:test@example.com?' + 'subject=' + subject + '&body=' + message;
+        var link = 'mailto:kunigirik@yahoo.com?' + 'subject=' + subject + '&body=' + message;
         window.location.href = link;
     });
 
