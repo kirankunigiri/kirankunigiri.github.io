@@ -133,11 +133,12 @@ body {
 .card {}
 
 .image {
+    margin-top: 0;
     height: 13em;
 }
 
 .image img {
-    height: 100%;
+    max-height: 100%;
     width: 100%;
     object-fit: contain;
 }
@@ -149,7 +150,6 @@ body {
 
 .rowText {
     min-height: 15em;
-    /*    height: 15em;*/
 }
 
 .rowTitle {
@@ -166,7 +166,21 @@ body {
 }
 
 .moreBtn {
-    opacity: 0;
+    opacity: 1;
+    background-color: transparent;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+
+.moreBtn:hover {
+    border-color: transparent;
+}
+
+.slideShow {
+    height: 0px;
+    width: 0px;
+    display: none;
 }
 
 .card-image img {

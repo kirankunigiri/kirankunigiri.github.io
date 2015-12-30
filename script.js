@@ -7,6 +7,23 @@ var i = 0;
 $(document).ready(function() {
     "use strict";
 
+    //================================================================================
+    // SLIDESHOW
+    //================================================================================
+    $(".fancybox").fancybox({
+        openEffect: 'none',
+        closeEffect: 'none'
+    });
+
+    $(".photoBtn").click(function() {
+        var link = $(this).attr("href");
+        console.log(link);
+        $(link).eq(0).trigger('click');
+    });
+
+    //================================================================================
+    // POSITION SETUP
+    //================================================================================
     // Put menu at top
     TweenMax.set("#menu", {
         y: -$("#menu").height() - 200
@@ -88,25 +105,25 @@ $(document).ready(function() {
         });
     });
 
-    // Button hover appear
-    $(".rowText").hover(
-        function() {
-            //            TweenMax.set($(this).find(".moreBtn"), {opacity:1});
-            TweenMax.to($(this).find(".moreBtn"), 1.2, {
-                opacity: 1,
-                ease: Back.easeOut
-            });
-        },
-        function() {
-            TweenMax.to($(this).find(".moreBtn"), 1.2, {
-                opacity: 0,
-                ease: Back.easeOut
-            });
-        }
-    );
+    // Button hover appear - Currently disabled
+    //    $(".rowText").hover(
+    //        function() {
+    //            //            TweenMax.set($(this).find(".moreBtn"), {opacity:1});
+    //            TweenMax.to($(this).find(".moreBtn"), 1.2, {
+    //                opacity: 1,
+    //                ease: Back.easeOut
+    //            });
+    //        },
+    //        function() {
+    //            TweenMax.to($(this).find(".moreBtn"), 1.2, {
+    //                opacity: 0,
+    //                ease: Back.easeOut
+    //            });
+    //        }
+    //    );
 
     // Image rotate on hover
-    $(".image").hover(
+    $(".image").find('img:first').hover(
         function() {
             TweenLite.to($(this), 3, {
                 rotation: 360,
@@ -141,16 +158,36 @@ $(document).ready(function() {
         offset: 200,
         callback: 'popIn(div)'
     }, ];
-    
-    var options = [
-    {selector: '.aboutMe', offset: 200, callback: 'popIn($(".aboutMe"))' },
-    {selector: '.skills', offset: 200, callback: 'popIn($(".skills"))' },
-    {selector: '.hackathons', offset: 200, callback: 'popIn($(".hackathons"))' },
-    {selector: '.projects', offset: 200, callback: 'popIn($(".projects"))' },
-    {selector: '.awards', offset: 200, callback: 'popIn($(".awards"))' },
-    {selector: '.new', offset: 200, callback: 'popIn($(".new"))' },
-    {selector: '.form', offset: 200, callback: 'popIn($(".form"))' }
-  ];
+
+    var options = [{
+        selector: '.aboutMe',
+        offset: 200,
+        callback: 'popIn($(".aboutMe"))'
+    }, {
+        selector: '.skills',
+        offset: 200,
+        callback: 'popIn($(".skills"))'
+    }, {
+        selector: '.hackathons',
+        offset: 200,
+        callback: 'popIn($(".hackathons"))'
+    }, {
+        selector: '.projects',
+        offset: 200,
+        callback: 'popIn($(".projects"))'
+    }, {
+        selector: '.awards',
+        offset: 200,
+        callback: 'popIn($(".awards"))'
+    }, {
+        selector: '.new',
+        offset: 200,
+        callback: 'popIn($(".new"))'
+    }, {
+        selector: '.form',
+        offset: 200,
+        callback: 'popIn($(".form"))'
+    }];
     Materialize.scrollFire(options);
 
     //     Title fade in
@@ -174,21 +211,21 @@ function popIn(item) {
         x = -item.width();
     }
     i++;
-    
+
     TweenLite.to(item, 3, {
         opacity: 1,
         ease: Power4.easeOut
     });
     // Slide in from side effect
-//    TweenLite.from(item, 2, {
-//        x: x,
-//        ease: Power4.easeOut
-//    });    
+    //    TweenLite.from(item, 2, {
+    //        x: x,
+    //        ease: Power4.easeOut
+    //    });    
     // Slide up effect
-//    TweenLite.from(item, 2, {
-//        y: item.height(),
-//        ease: Power4.easeOut
-//    });
+    //    TweenLite.from(item, 2, {
+    //        y: item.height(),
+    //        ease: Power4.easeOut
+    //    });
 }
 
 
