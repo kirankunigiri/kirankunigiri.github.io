@@ -43,29 +43,31 @@ $(document).ready(function() {
     //================================================================================
     // PAGE ANIMATION START
     //================================================================================
-    var width = $(window).width();
-    var height = $(window).height();
-    var tl = new TimelineLite();
-    tl.from(".profile-img", 1, {
-        x: -width - $(".profile-img").width(),
-        rotation: -480,
-        ease: Circ.easeOut
-    }).from(".menubtn", 3, {
-        y: -200,
-        rotation: 360,
-        ease: Elastic.easeOut
-    }, '-= 0.5').from(".title", 1, {
-        opacity: 0,
-        x: -$(window).width(),
-        ease: Power4.easeOut
-    }, '-= 2').from(".subtitle", 1, {
-        opacity: 0,
-        x: width,
-        ease: Power4.easeOut
-    }, '-= 1.7').to(".scrollbtn", 0.5, {
-        onComplete: fadeScrollBtn,
-        ease: Power4.easeOut
-    }, '-= 1.5');
+    $(window).load(function() {
+        var width = $(window).width();
+        var height = $(window).height();
+        var tl = new TimelineLite();
+        tl.from(".profile-img", 1, {
+            x: -width - $(".profile-img").width(),
+            rotation: -480,
+            ease: Circ.easeOut
+        }).from(".menubtn", 3, {
+            y: -200,
+            rotation: 360,
+            ease: Elastic.easeOut
+        }, '-= 0.5').from(".title", 1, {
+            opacity: 0,
+            x: -$(window).width(),
+            ease: Power4.easeOut
+        }, '-= 2').from(".subtitle", 1, {
+            opacity: 0,
+            x: width,
+            ease: Power4.easeOut
+        }, '-= 1.7').to(".scrollbtn", 0.5, {
+            onComplete: fadeScrollBtn,
+            ease: Power4.easeOut
+        }, '-= 1.5');
+    });
     //================================================================================
     // PAGE ANIMATION END
     //================================================================================
