@@ -104,31 +104,31 @@ body {
 
 .aboutMe {
     margin-top: 20em;
-    opacity: 0;
+/*    opacity: 0;*/
 }
 
 .skills {
-    opacity: 0;
+/*    opacity: 0;*/
 }
 
 .hackathons {
-    opacity: 0;
+/*    opacity: 0;*/
 }
 
 .projects {
-    opacity: 0;
+/*    opacity: 0;*/
 }
 
 .awards {
-    opacity: 0;
+/*    opacity: 0;*/
 }
 
 .new {
-	opacity: 0;
+/*	opacity: 0;*/
 }
 
 .form {
-	opacity: 0;
+/*	opacity: 0;*/
 }
 
 .card {}

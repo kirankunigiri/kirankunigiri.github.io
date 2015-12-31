@@ -7,6 +7,10 @@ var i = 0;
 $(document).ready(function() {
     "use strict";
 
+    //    Scroll Reveal
+    window.sr = ScrollReveal().reveal('.aboutTitle, .aboutDescription, .subhead, .row');
+
+
     //================================================================================
     // SLIDESHOW
     //================================================================================
@@ -68,7 +72,7 @@ $(document).ready(function() {
             ease: Power0.easeOut
         }, '-= 1.5')
     }
-    
+
     image.onerror = function() {
         console.error("Cannot load image");
     }
@@ -162,75 +166,7 @@ $(document).ready(function() {
         var link = 'mailto:kunigirik@yahoo.com?' + 'subject=' + subject + '&body=' + message;
         window.location.href = link;
     });
-
-    // Scroll Fire
-    var options = [{
-        selector: '.rowTitle',
-        offset: 200,
-        callback: 'popIn(div)'
-    }, ];
-
-    var options = [{
-        selector: '.aboutMe',
-        offset: 200,
-        callback: 'popIn($(".aboutMe"))'
-    }, {
-        selector: '.skills',
-        offset: 200,
-        callback: 'popIn($(".skills"))'
-    }, {
-        selector: '.hackathons',
-        offset: 200,
-        callback: 'popIn($(".hackathons"))'
-    }, {
-        selector: '.projects',
-        offset: 200,
-        callback: 'popIn($(".projects"))'
-    }, {
-        selector: '.awards',
-        offset: 200,
-        callback: 'popIn($(".awards"))'
-    }, {
-        selector: '.new',
-        offset: 200,
-        callback: 'popIn($(".new"))'
-    }, {
-        selector: '.form',
-        offset: 200,
-        callback: 'popIn($(".form"))'
-    }];
-    Materialize.scrollFire(options);
-
-    //     Title fade in
-    //        var title = $(".title");
-    //        multiFade(title, 1300, ["Kiran Kunigiri"]);
-
 });
-
-function popIn(item) {
-    var height = $(window).height();
-    var x = item.width();
-    if (i % 2 == 0) {
-        x = -item.width();
-    }
-    i++;
-
-    TweenLite.to(item, 3, {
-        opacity: 1,
-        ease: Power4.easeOut
-    });
-    // Slide in from side effect
-    //    TweenLite.from(item, 2, {
-    //        x: x,
-    //        ease: Power4.easeOut
-    //    });    
-    // Slide up effect
-    //    TweenLite.from(item, 2, {
-    //        y: item.height(),
-    //        ease: Power4.easeOut
-    //    });
-}
-
 
 function slideMenuOut(arr) {
     // Unhide menu
