@@ -15,7 +15,7 @@ body {
     z-index: 100;
     margin-left: 2em;
     margin-top: 2em;
-    background-color: #252222; 
+    background-color: transparent; 
     behavior: url(PIE.htc);
     color: #252222;
     width: 2.5em;
