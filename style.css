@@ -3,6 +3,15 @@ body {
     visibility: hidden;
 }
 
+.loader {
+    position: fixed;
+    background-color: #252222;
+    z-index: 200;
+    height: 100%;
+    width: 100%;
+	opacity: 1;
+}
+
 .menubtn {
     position: fixed;
     z-index: 100;
