@@ -70,7 +70,7 @@ $(document).ready(function() {
         }, '-= 1.7').to(".scrollbtn", 0.5, {
             opacity: 1,
             ease: Power0.easeOut
-        }, '-= 1.5')
+        }, '-= 1')
     }
 
     image.onerror = function() {
