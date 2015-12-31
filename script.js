@@ -42,6 +42,13 @@ $(document).ready(function() {
     //================================================================================
     var image = new Image();
     image.onload = function() {
+    }
+    image.onerror = function() {
+        console.error("Cannot load image");
+    }
+    image.src = "img/profile1.png";
+
+    $(window).load(function() {
         // Unhide body and start timeline animation
         $("body").css("visibility", "visible");
         $(".loader").css("visibility", "hidden");
@@ -72,19 +79,6 @@ $(document).ready(function() {
 
         //    Scroll Reveal
         window.sr = ScrollReveal().reveal('.aboutTitle, .aboutDescription, .subhead, .row');
-    }
-
-    image.onerror = function() {
-        console.error("Cannot load image");
-    }
-    image.src = "img/profile1.png";
-
-    $(window).load(function() {
-        //        alert("page loaded!");
-        //        TweenLite.to($(".progress"), 1, {
-        //            opacity: 1,
-        //            ease: Elastic.easeOut
-        //        });
     });
 
     //================================================================================
