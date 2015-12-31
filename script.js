@@ -7,10 +7,6 @@ var i = 0;
 $(document).ready(function() {
     "use strict";
 
-    //    Scroll Reveal
-    window.sr = ScrollReveal().reveal('.aboutTitle, .aboutDescription, .subhead, .row');
-
-
     //================================================================================
     // SLIDESHOW
     //================================================================================
@@ -71,6 +67,9 @@ $(document).ready(function() {
             opacity: 1,
             ease: Power0.easeOut
         }, '-= 1')
+
+        //    Scroll Reveal
+        window.sr = ScrollReveal().reveal('.aboutTitle, .aboutDescription, .subhead, .row');
     }
 
     image.onerror = function() {
