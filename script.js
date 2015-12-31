@@ -4,21 +4,9 @@
 var menuMode = 0;
 var i = 0;
 
-var loaded = false;
-var time = 30000;
-window.onload = function() {
-     loaded = true;
- };
-setTimeout(function() {
-     if(!loaded) {
-         window.location.reload();
-     }
-
-},time);
-
 $(document).ready(function() {
     "use strict";
-    
+
     //================================================================================
     // SLIDESHOW
     //================================================================================
@@ -83,7 +71,9 @@ $(document).ready(function() {
         }, '-= 1')
 
         //    Scroll Reveal
-        window.sr = ScrollReveal().reveal('.aboutTitle, .aboutDescription, .subhead, .row');
+        if (width > 800) {
+            window.sr = ScrollReveal().reveal('.aboutTitle, .aboutDescription, .subhead, .row');
+        }
     });
 
     //================================================================================
@@ -171,6 +161,7 @@ $(document).ready(function() {
         var link = 'mailto:kunigirik@yahoo.com?' + 'subject=' + subject + '&body=' + message;
         window.location.href = link;
     });
+
 });
 
 function slideMenuOut(arr) {
