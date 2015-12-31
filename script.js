@@ -55,7 +55,6 @@ $(document).ready(function() {
 
     $(window).load(function() {
         // Unhide body and start timeline animation
-        alert("Finished loading!")
         $("body").css("visibility", "visible");
         $(".loader").css("visibility", "hidden");
 
