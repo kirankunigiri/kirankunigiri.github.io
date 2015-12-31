@@ -42,38 +42,35 @@ $(document).ready(function() {
     //================================================================================
     var image = new Image();
     image.onload = function() {
-        console.info("Image loaded !");
-        //do something...
-        
-    $("body").css("visibility", "visible");
-    var width = $(window).width();
-    var height = $(window).height();
-    var tl = new TimelineLite();
-    tl.from(".profile-img", 1, {
-        x: -width - $(".profile-img").width(),
-        rotation: -480,
-        ease: Circ.easeOut
-    }).from(".menubtn", 3, {
-        y: -200,
-        rotation: 360,
-        ease: Elastic.easeOut
-    }, '-= 0.5').from(".title", 1, {
-        opacity: 0,
-        x: -$(window).width(),
-        ease: Power4.easeOut
-    }, '-= 2').from(".subtitle", 1, {
-        opacity: 0,
-        x: width,
-        ease: Power4.easeOut
-    }, '-= 1.7').to(".scrollbtn", 0.5, {
-        opacity: 1,
-        ease: Power0.easeOut
-    }, '-= 1.5')
-
+        // Unhide body and start timeline animation
+        $("body").css("visibility", "visible");
+        var width = $(window).width();
+        var height = $(window).height();
+        var tl = new TimelineLite();
+        tl.from(".profile-img", 1, {
+            x: -width - $(".profile-img").width(),
+            rotation: -480,
+            ease: Circ.easeOut
+        }).from(".menubtn", 3, {
+            y: -200,
+            rotation: 360,
+            ease: Elastic.easeOut
+        }, '-= 0.5').from(".title", 1, {
+            opacity: 0,
+            x: -$(window).width(),
+            ease: Power4.easeOut
+        }, '-= 2').from(".subtitle", 1, {
+            opacity: 0,
+            x: width,
+            ease: Power4.easeOut
+        }, '-= 1.7').to(".scrollbtn", 0.5, {
+            opacity: 1,
+            ease: Power0.easeOut
+        }, '-= 1.5')
     }
+    
     image.onerror = function() {
         console.error("Cannot load image");
-        //do something else...
     }
     image.src = "img/profile1.png";
 
