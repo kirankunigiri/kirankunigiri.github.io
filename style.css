@@ -77,12 +77,12 @@ body {
     margin-top: .4em;
     color: white;
     font-size: 6em;
-    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Open Sans', Arial, serif;
 }
 
 .subtitle {
     color: rgb(203, 203, 203);
-    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Open Sans', Arial, serif;
     font-size: 2em;
     margin-bottom: 10%;
     margin-top: 1.3em;
@@ -94,14 +94,14 @@ body {
     margin-bottom: 1em;
     color: white;
     font-size: 6em;
-    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Open Sans', Arial, serif;
 }
 
 .aboutTitle {
     text-align: center;
     color: white;
     font-size: 6em;
-    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-family: 'HelveticaNeue-UltraLight', 'Helvetica Neue UltraLight', 'Open Sans', Arial, serif;
 }
 
 .aboutDescription {
