@@ -37,13 +37,11 @@ $(document).ready(function() {
         ease: Circ.easeNone
     });
 
-    // Scroll button hide
-    $(".scrollbtn").fadeOut(0, function() {});
-
     //================================================================================
     // PAGE ANIMATION START
     //================================================================================
     $(window).load(function() {
+        $("body").css("visibility", "visible");
         var width = $(window).width();
         var height = $(window).height();
         var tl = new TimelineLite();
@@ -51,7 +49,7 @@ $(document).ready(function() {
             x: -width - $(".profile-img").width(),
             rotation: -480,
             ease: Circ.easeOut
-        }).from(".menubtn", 3, {
+        }, '+= 1').from(".menubtn", 3, {
             y: -200,
             rotation: 360,
             ease: Elastic.easeOut
@@ -64,9 +62,9 @@ $(document).ready(function() {
             x: width,
             ease: Power4.easeOut
         }, '-= 1.7').to(".scrollbtn", 0.5, {
-            onComplete: fadeScrollBtn,
-            ease: Power4.easeOut
-        }, '-= 1.5');
+            opacity: 1,
+            ease: Power0.easeOut
+        }, '-= 1.5')
     });
     //================================================================================
     // PAGE ANIMATION END
@@ -197,14 +195,6 @@ $(document).ready(function() {
     //        multiFade(title, 1300, ["Kiran Kunigiri"]);
 
 });
-
-
-
-function fadeScrollBtn() {
-    $(".scrollbtn").fadeIn(600, function() {
-
-    });
-}
 
 function popIn(item) {
     var height = $(window).height();

@@ -1,5 +1,6 @@
 body {
     background-color: #252222;
+    visibility: hidden;
 }
 
 .menubtn {
@@ -39,7 +40,7 @@ body {
 }
 
 .scrollbtn {
-    opacity: 1;
+    opacity: 0;
     text-decoration: none;
     width: 4em;
     height: 4em;
