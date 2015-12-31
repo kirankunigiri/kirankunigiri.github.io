@@ -4,9 +4,21 @@
 var menuMode = 0;
 var i = 0;
 
+var loaded = false;
+var time = 30000;
+window.onload = function() {
+     loaded = true;
+ };
+setTimeout(function() {
+     if(!loaded) {
+         window.location.reload();
+     }
+
+},time);
+
 $(document).ready(function() {
     "use strict";
-
+    
     //================================================================================
     // SLIDESHOW
     //================================================================================
@@ -40,13 +52,6 @@ $(document).ready(function() {
     //================================================================================
     // PAGE ANIMATION START
     //================================================================================
-    var image = new Image();
-    image.onload = function() {
-    }
-    image.onerror = function() {
-        console.error("Cannot load image");
-    }
-    image.src = "img/profile1.png";
 
     $(window).load(function() {
         // Unhide body and start timeline animation
