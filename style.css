@@ -45,6 +45,7 @@ body {
     color: white;
     font-family: 'Open Sans', sans-serif;
     text-transform: uppercase;
+    z-index: 20;
 }
 
 .scrollbtn {
