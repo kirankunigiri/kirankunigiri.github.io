@@ -1,0 +1,140 @@
+#coverPicture {
+    background-image: url(../images/retrocover.png);
+    width: 100%;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.nav a {
+  color: #5a5a5a;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+}
+
+.nav li {
+  display: inline;
+}
+
+.jumbotron {
+  background-image: url('retrocover.png');
+  height: 500px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.jumbotron .container {
+  position: relative;
+  top:100px;
+  text-align: center;
+}
+
+.jumbotron h1 {
+  color: #fff;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+}
+
+.jumbotron p {
+  font-size: 20px;
+  color: #fff;
+}
+
+.learn-more {
+  background-color: #f7f7f7;
+}
+
+.learn-more h3 {
+  font-family: 'Shift', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.learn-more a {
+  color: #00b0ff;
+}
+
+.neighborhood-guides {
+    background-color: #EFEFEF;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.neighborhood-guides h2 {
+    color: #393c3d;
+    font-size: 24px;
+}
+
+.neighborhood-guides p {
+    font-size: 15px;
+    margin-bottom: 13px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%;
+  margin-top: 50px;
+}
+
+logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  margin-top: 50px;
+}
+
+pageTitle {
+  color: black;
+  font-size: 48px;  
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 30px;
+  display: block;
+}
+
+.imageCenter {
+  margin-top: -20px;
+}
+
+.title {
+    text-align: center;
+    font-family: 'Walter Turncoat', cursive;
+    color: white;
+    font-size: 3em;
+    padding-top: 12%;
+    margin-bottom: 2%;
+}
+
+.subtitle {
+    text-align: center;
+    font-family: 'Exo', sans-serif;
+    color: white;
+    font-size: 0.9em;
+}
+
+li {
+    font-size: 0.45em;
+}
+/* This is
+a multi-line
+#landing-content:hover {
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    -webkit-transition: -webkit-transform .3s ease-out;
+    -webkit-transition: transform .3s ease-out;
+    -moz-transition: transform .3s ease-out;
+    transition: transform .3s ease-out;
+}
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
