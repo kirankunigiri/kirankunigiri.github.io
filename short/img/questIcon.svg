@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="180px" height="180px" viewBox="0 0 180 180" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.4.4 (17249) - http://www.bohemiancoding.com/sketch -->
+    <title>Official Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="90" cy="90" r="90"></circle>
+        <radialGradient cx="50%" cy="0%" fx="50%" fy="0%" r="110.931813%" id="radialGradient-3">
+            <stop stop-color="#93F1A9" offset="0%"></stop>
+            <stop stop-color="#2EC887" offset="100%"></stop>
+        </radialGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Official-Icon" sketch:type="MSArtboardGroup">
+            <mask id="mask-2" sketch:name="Mask" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Mask" fill="#D8D8D8" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+            <g id="Rectangle-23-+-Q-+-Shape-Copy-2" sketch:type="MSLayerGroup" mask="url(#mask-2)">
+                <rect id="Rectangle-23" fill="url(#radialGradient-3)" sketch:type="MSShapeGroup" x="0" y="0" width="180" height="180"></rect>
+                <text id="Q" sketch:type="MSTextLayer" font-family="Intensa Fuente" font-size="150" font-weight="normal" fill="#2C3439">
+                    <tspan x="56" y="159">Q</tspan>
+                </text>
+                <path d="M119.370269,19.6899996 L99.9112999,34.7045774 L86.1765047,20.0711466 L72.43474,34.7045774 L54.6297306,20.8334406 L61.7491208,48.3100004 L111.86995,48.3100004 L119.370269,19.6899996 L119.370269,19.6899996 Z M86.2573704,35.1564826 L90.1473705,38.7128277 L86.2573704,43.8261053 L82.3673703,38.7128277 L86.2573704,35.1564826 L86.2573704,35.1564826 Z M67.7060198,39.9545787 C68.7183614,39.9545787 69.5157219,40.75182 69.5157219,41.7647574 C69.5157219,42.7768606 68.7184806,43.5707652 67.7059007,43.5707652 C66.6932016,43.5707652 65.895722,42.7768606 65.895722,41.7646383 C65.895722,40.7524159 66.6933208,39.9546979 67.7059007,39.9546979 L67.7060198,39.9545787 Z M105.172908,38.7961228 C106.18525,38.7961228 106.98261,39.5933641 106.98261,40.6063015 C106.98261,41.6184047 106.185369,42.4123093 105.172789,42.4123093 C104.16009,42.4123093 103.36261,41.6184047 103.36261,40.6061823 C103.36261,39.59396 104.160209,38.796242 105.172789,38.796242 L105.172908,38.7961228 Z" id="Shape-Copy-2" stroke="#2C3439" fill="#FEBA2C" sketch:type="MSShapeGroup" transform="translate(87.000000, 34.000000) rotate(-10.000000) translate(-87.000000, -34.000000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>
