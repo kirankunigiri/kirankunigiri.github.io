@@ -17,3 +17,7 @@ h1 {
 h5 {
     font-size: 1.5em;
 }
+
+.boxOverlay {
+	display: none;
+}

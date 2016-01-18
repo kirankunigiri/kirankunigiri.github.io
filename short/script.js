@@ -5,6 +5,7 @@ $(document).ready(function() {
     "use strict";
 
     var windowWidth = $(window).width();
+    var isMobile = windowWidth <= 500;
     console.log(windowWidth);
 
     // SETUP
@@ -56,20 +57,22 @@ $(document).ready(function() {
     });
 
     // Actions
-    var boxHeight = $(".box").height();
-    $(".box").hover(
-        function() {
-            TweenLite.to($(this).find('.boxOverlay:first'), 0.5, {
-                y: 0,
-                ease: Power4.easeOut
-            });
-        },
-        function() {
-            TweenLite.to($(this).find('.boxOverlay:first'), 0.5, {
-                y: boxHeight,
-                ease: Power4.easeOut
-            });
-        }
-    );
+    if (!isMobile) {
+        var boxHeight = $(".box").height();
+        $(".box").hover(
+            function() {
+                TweenLite.to($(this).find('.boxOverlay:first'), 0.5, {
+                    y: 0,
+                    ease: Power4.easeOut
+                });
+            },
+            function() {
+                TweenLite.to($(this).find('.boxOverlay:first'), 0.5, {
+                    y: boxHeight,
+                    ease: Power4.easeOut
+                });
+            }
+        );
+    }
 
 });
