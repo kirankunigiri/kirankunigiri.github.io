@@ -21,20 +21,24 @@ $(document).ready(function() {
 
 
     // Close button
-    $('.xbtn').on("click", function(e) {
+    $('.cover').on("click", function(e) {
         e.preventDefault();
         $(".cover").hide();
-        console.log("hello");
     });
-    
-    $('.boxOverlay').on("click", function(e) {
+
+    $(document).keyup(function(e) {
+        if (e.keyCode == 27) { // escape key maps to keycode `27`
+            $(".cover").trigger("click");
+        }
+    });
+
+    $('.box, .boxOverlay').on("click", function(e) {
         e.preventDefault();
         var descriptionText = $(this).find('.boxDescription:first').text();
         var titleText = $(this).find('p:first').text();
         $(".cover").find('.coverDescription:first').text(descriptionText);
         $(".cover").find('.coverTitle:first').text(titleText);
         $(".cover").show();
-        console.log(text);
     });
 
     // Actions
