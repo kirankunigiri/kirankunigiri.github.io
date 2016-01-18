@@ -4,12 +4,26 @@
 $(document).ready(function() {
     "use strict";
 
+    var windowWidth = $(window).width();
+    console.log(windowWidth);
 
     // SETUP
     $.adaptiveBackground.run();
     $(".cover").hide();
 
-    var width = $(window).width() / 7;
+    var width = windowWidth / 7;
+    if (windowWidth <= 1100) {
+        width = windowWidth / 5;
+    }
+    if (windowWidth <= 800) {
+        width = windowWidth / 4;
+    }
+    if (windowWidth <= 600) {
+        width = windowWidth / 3;
+    }
+    if (windowWidth <= 500) {
+        width = windowWidth / 2;
+    }
     $(".box").each(function(index) {
         $(this).width(width);
         $(this).height(width);
