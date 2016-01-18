@@ -24,3 +24,11 @@ h5 {
 .boxOverlay {
 	display: none;
 }
+
+#makehacks {
+	background-image: url("img/makehacks.png") !important;
+}
+
+#quest {
+	background-image: url(img/questIcon.png);
+}
