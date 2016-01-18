@@ -21,15 +21,23 @@ body {
     position: fixed;
     margin-left: 2em;
     margin-top: 2em;
-    background-color: transparent; 
+    background-color: transparent;
     color: #252222;
     width: 40px;
+}
+
+.text {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
 }
 
 .coverTitle {
     position: relative;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 0;
     color: white;
     font-size: 6em;
 }
@@ -55,10 +63,8 @@ h5 {
 }
 
 .box {
-/*    margin-right: 10px;*/
-/*    margin-top: 10px;*/
     width: 12em;
-	height: 12em;
+    height: 12em;
     overflow: hidden;
     position: relative;
     background-size: 8em;
@@ -72,7 +78,7 @@ h5 {
 }
 
 .boxDescription {
-	display: none;
+    display: none;
 }
 
 .box img {
