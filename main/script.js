@@ -59,13 +59,13 @@ $(document).ready(function() {
             ease: Elastic.easeOut
         }, '-= 0.5').from(".title", 1, {
             opacity: 0,
-            x: -$(window).width(),
+            x: -width,
             ease: Power4.easeOut
         }, '-= 2').from(".subtitle", 1, {
             opacity: 0,
-            x: width,
+            x: -width,
             ease: Power4.easeOut
-        }, '-= 1.7').to(".scrollbtn", 0.5, {
+        }, '-= 1.5').to(".scrollbtn", 0.5, {
             opacity: 1,
             ease: Power0.easeOut
         }, '-= 1')
