@@ -28,6 +28,7 @@ body {
 .coverTitle {
     position: relative;
     text-align: center;
+    margin-top: 2em;
     color: white;
     font-size: 6em;
 }
