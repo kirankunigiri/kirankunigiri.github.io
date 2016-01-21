@@ -12,22 +12,29 @@ $(document).ready(function() {
     $.adaptiveBackground.run();
     $(".cover").hide();
 
-    var width = windowWidth / 7;
+    var numC = 7;
     if (windowWidth <= 1100) {
-        width = windowWidth / 5;
+        numC = 5
     }
     if (windowWidth <= 800) {
-        width = windowWidth / 4;
+        numC = 4;
     }
     if (windowWidth <= 600) {
+        numC = 3;
         width = windowWidth / 3;
     }
     if (windowWidth <= 500) {
-        width = windowWidth / 2;
+        numC = 2;
     }
+    var width = windowWidth / numC;
+    var numBoxes = $(".box").length;
     $(".box").each(function(index) {
-        $(this).width(width);
-        $(this).height(width);
+        if (index >= numBoxes - (numBoxes % numC)) {
+            $(this).width(windowWidth/(numBoxes % numC));
+        } else {
+            $(this).width(width);
+            $(this).height(width);
+        }
     });
 
     TweenMax.set(".boxOverlay", {
