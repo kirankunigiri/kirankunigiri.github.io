@@ -180,7 +180,7 @@ function slideMenuOut(arr) {
         ease: Power4.easeOut
     });
 
-    $('.menubtn').attr("src", "img/x.svg");
+    $('.menubtn').attr("src", "main/img/x.svg");
 
     menuMode = 1;
 }
@@ -199,7 +199,7 @@ function slideMenuIn(arr) {
         rotation: 0,
         ease: Power4.easeOut
     });
-    $('.menubtn').attr("src", "img/menu.svg");
+    $('.menubtn').attr("src", "main/img/menu.svg");
 
     menuMode = 0;
 }
