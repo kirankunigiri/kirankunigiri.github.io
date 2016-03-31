@@ -1,6 +1,10 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 
+var host = "http://kirankunigiri.com";
+if ((host == window.location.host) && (window.location.protocol != "https:"))
+    window.location.protocol = "https";
+
 var menuMode = 0;
 var i = 0;
 
