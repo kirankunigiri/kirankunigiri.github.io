@@ -1,7 +1,7 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 
-var host = "http://kirankunigiri.com";
+var host = "kirankunigiri.com";
 if ((host == window.location.host) && (window.location.protocol != "https:"))
     window.location.protocol = "https";
 
