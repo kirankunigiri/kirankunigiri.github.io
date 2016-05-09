@@ -34,12 +34,12 @@ $(document).ready(function() {
     });
 
     // Scroll button hovering
-    TweenMax.to(".scrollbtn", 0.75, {
-        y: 10,
-        repeat: -1,
-        yoyo: true,
-        ease: Circ.easeNone
-    });
+//    TweenMax.to(".scrollbtn", 0.75, {
+//        y: 10,
+//        repeat: -1,
+//        yoyo: true,
+//        ease: Circ.easeNone
+//    });
 
     //================================================================================
     // PAGE ANIMATION START
