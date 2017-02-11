@@ -1,9 +1,9 @@
 /*jslint browser: true*/
 /*global $, jQuery, alert*/
 
-var host = "kirankunigiri.com";
-if ((host == window.location.host) && (window.location.protocol != "https:"))
-    window.location.protocol = "https";
+// var host = "kirankunigiri.com";
+// if ((host == window.location.host) && (window.location.protocol != "https:"))
+//     window.location.protocol = "https";
 
 var menuMode = 0;
 var i = 0;
