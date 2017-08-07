@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="31px" viewBox="0 0 30 31" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Folder</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="30" height="30.0722892" rx="4.17721519"></rect>
+        <mask id="mask-2" maskContentUnits="userSpaceOnUse" maskUnits="objectBoundingBox" x="0" y="0" width="30" height="30.0722892" fill="white">
+            <use xlink:href="#path-1"></use>
+        </mask>
+    </defs>
+    <g id="Website" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(-60.000000, -692.000000)">
+            <g id="Information" transform="translate(60.000000, 554.000000)">
+                <g id="Organize" transform="translate(0.000000, 134.884337)">
+                    <g id="Folder" transform="translate(0.000000, 3.508434)">
+                        <use id="Rectangle-2" stroke="#EBEBEB" mask="url(#mask-2)" stroke-width="1.51898734" xlink:href="#path-1"></use>
+                        <g id="folder" transform="translate(7.500000, 8.019277)" fill-rule="nonzero" fill="#F3F3F3">
+                            <path d="M5.69556818,2.78059663 L6.08829545,3.38313253 L6.81818182,3.38313253 L12.9545455,3.38313253 C13.3305682,3.38313253 13.6363636,3.68659952 13.6363636,4.05975904 L13.6363636,11.5026506 C13.6363636,11.8758101 13.3305682,12.1792771 12.9545455,12.1792771 L2.04545455,12.1792771 C1.66943182,12.1792771 1.36363636,11.8758101 1.36363636,11.5026506 L1.36363636,2.02987952 C1.36363636,1.65672 1.66943182,1.35325301 2.04545455,1.35325301 L4.77272727,1.35325301 L5.69556818,2.78059663 Z M5.45454545,0 L2.04545455,0 C0.915340909,0 0,0.908371084 0,2.02987952 L0,11.5026506 C0,12.624159 0.915340909,13.5325301 2.04545455,13.5325301 L12.9545455,13.5325301 C14.0846591,13.5325301 15,12.624159 15,11.5026506 L15,4.05975904 C15,2.9382506 14.0846591,2.02987952 12.9545455,2.02987952 L6.81818182,2.02987952 L5.45454545,0 L5.45454545,0 Z" id="Shape"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
