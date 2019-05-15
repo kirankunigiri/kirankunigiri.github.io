@@ -1,4 +1,4 @@
-$animation-duration: .4s;
+$animation-duration: .5s;
 $border-radius: 1.5rem;
 
 .project {
@@ -55,8 +55,6 @@ $border-radius: 1.5rem;
 	&--hackathons .project-main__right {
 		background: #6b2de4;
 	}
-
-	background-color: transparent;
 }
 
 
@@ -66,8 +64,6 @@ $border-radius: 1.5rem;
 	align-items: stretch;
 	position: relative;
 	color: white;
-	background-color: transparent;
-	// overflow: hidden;
 
 	@include respond(l2p5) {
 		flex-direction: column;
@@ -75,6 +71,7 @@ $border-radius: 1.5rem;
 
 	// Styling
 	box-shadow: 3px 6px 40px 0 rgba(0, 0, 0, 0.24);
+	border-radius: $border-radius;
 
 
 
