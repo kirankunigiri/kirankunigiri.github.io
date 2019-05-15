@@ -1,0 +1,75 @@
+// Navigation
+.navbar {
+	position: fixed;
+	z-index: 10;
+	height: 6rem;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.95);
+	font-size: 2.4rem;
+	color: #282828;
+
+	@include respond(l1) {
+		display: none;
+	}
+
+	&__list {
+		list-style: none;
+		@include clearfix;
+		display: flex;
+		flex-direction: row;
+		justify-content: flex-end;
+		align-items: center;
+		height: 100%;
+
+		&:first-child {
+			margin-left: 1.5rem;
+		}
+
+		&:last-child {
+			margin-right: 1.5rem;
+		}
+	}
+
+	&__item {
+
+		&--logo img {
+			margin-top: 1rem;
+			height: 4.5rem;
+		}
+
+		// Align all items prior to this one to the right
+		&--name {
+			align-self: flex-start;
+			margin: auto;
+		}
+	}
+
+	&__link {
+
+		&:link,
+		&:visited {
+			text-decoration: none;
+			color: black;
+			transition: all .3s;
+		}
+
+		&:hover {
+			color: #3C78F7;
+		}
+	}
+
+}
+
+#navbar__item--name {
+	color: #3C78F7 !important;
+	font-size: 2.7rem;
+}
+
+.float-left {
+	margin-left: 1rem;
+
+}
+
+.float-right {
+	margin-right: 2rem;
+}

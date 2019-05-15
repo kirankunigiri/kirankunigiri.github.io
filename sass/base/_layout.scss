@@ -1,0 +1,143 @@
+.section-status {
+	padding-top: 27rem;
+	padding-bottom: 24rem;
+
+	@include respond(l5) {
+		padding-bottom: 10rem;
+	}
+}
+
+.section-skills {
+	padding-top: 6rem;
+	position: relative;
+}
+
+.section-projects {
+	padding-top: 38rem;
+	position: relative;
+}
+
+.skills-bg {
+	background-image: url(../img/wc-primary.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: .2;
+
+	position: absolute;
+	width: 100%;
+	height: 114%;
+	transform: translate(-50%, 0%);
+	z-index: -1;
+
+	&--left {
+		left: 26%;
+		top: -10%;
+	}
+
+	&--right {
+		transform: translate(50%, 0%) rotate(160deg);
+		left: -20%;
+		top: -7%;
+	}
+
+	@include respond(l4) {
+		width: 120%;
+
+		&--right {
+			left: -40%;
+		}
+	}
+
+	@include respond(l3) {
+		width: 150%;
+	}
+
+	@include respond(l2) {
+		width: 180%;
+
+		&--right {
+			left: -80%;
+		}
+	}
+
+	@include respond(l1) {
+		width: 280%;
+ 
+		&--right {
+			left: -160%;
+		}
+	}
+
+}
+
+// Skills Background Wrapper
+.skills-bg-wrapper {
+	top: -22%;
+	position: absolute;
+	width: 100%;
+	height: 150%;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.projects-bg-wrapper {
+	top: -10%;
+	position: absolute;
+	width: 100%;
+	height: 150%;
+	overflow: hidden;
+	pointer-events: none;
+
+	@include respond(l2p5) {
+		display: none;
+	}
+}
+
+.section-ending {
+	margin-top: 8rem;
+	padding-top: 36rem;
+	padding-bottom: 2rem;
+	position: relative;
+
+	&__title {
+		font-size: 6rem;
+
+		@include respond(l1) {
+			font-size: 3rem !important;
+		}
+	}
+
+	&__subtitle {
+		font-size: 3.4rem;
+
+		@include respond(l1) {
+			font-size: 3rem !important;
+		}
+	}
+}
+
+.ending-bg-wrapper {
+	top: 1%;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.ending-bg {
+	z-index: -1;
+	background-image: url(../img/wc-blue-rotated.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	opacity: .2;
+
+	position: absolute;
+	width: 300%;
+	height: 300%;
+
+	left: 50%;
+	transform: translate(-50%, 0%);
+}

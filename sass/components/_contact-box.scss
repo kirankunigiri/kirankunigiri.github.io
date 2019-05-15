@@ -1,0 +1,44 @@
+.contact-box {
+	margin: 0 auto;
+	text-align: center;
+	margin-top: 5rem;
+
+	&__container {
+		background-color: white;
+		padding: 3rem 5rem;
+		display: inline-block;
+		box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.22);
+		border-radius: 15px;
+
+		@include respond(l2) {
+			max-width: 90%;
+		}
+	}
+
+	&__title {
+		font-size: 2.8rem;
+	}
+
+	&__email {
+		font-size: 3.2rem;
+
+		@include respond(l1) {
+			font-size: 2rem;
+		}
+	}
+
+	&--resume {
+		margin-top: 3rem;
+		margin-bottom: 4rem;
+	}
+
+	&__resume a {
+		text-decoration: none;
+
+		font-size: 3.2rem;
+
+		@include respond(l1) {
+			font-size: 2rem;
+		}
+	}
+}

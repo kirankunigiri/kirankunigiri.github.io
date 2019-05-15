@@ -1,0 +1,131 @@
+.row {
+	max-width: 90rem;
+	margin: 0 auto;
+
+	// Add vertical gutter to the row
+	&>div {
+		&:not(:last-child) {
+			margin-bottom: $gutter-vertical;
+		}
+	}
+
+	@include respond(l3) {
+		max-width: 90%;
+	}
+}
+
+.row-skill {
+	max-width: 76rem;
+
+	@include respond(l2) {
+		width: 90%;
+		max-width: 60rem;
+	}
+}
+
+.row-project {
+	max-width: 95rem;
+
+	@include respond(l3) {
+		width: 90%;
+	}
+
+	&>div {
+		&:not(:last-child) {
+			margin-bottom: 2.4rem;
+		}
+	}
+
+}
+
+.column {
+	display: flex;
+	flex-direction: column;
+
+	& > div {
+		margin-bottom: 3rem;
+
+		@include respond(l3) {
+			margin-bottom: 1.5rem;
+		}
+	}
+}
+
+.column-grid {
+	max-width: $grid-width;
+	margin: 0 auto;
+
+	display: flex;
+	flex-direction: row;
+	align-items: stretch;
+
+	& > div {
+		flex: 1 1 0;
+		width: 0;
+		margin: 0 1.5rem;
+	}
+
+	@include respond(l5) {
+		max-width: 94%;
+	}
+
+	@include respond(l3) {
+		max-width: 90%;
+	}
+
+	@include respond(l2) {
+		max-width: 96%;
+	}
+
+	// &>div:first-child {
+	// 	margin-top: 0;
+	// }
+
+	// @include respond(l5) {
+	// 	max-width: 90%;
+	// }
+
+	// 	@include respond(l3) {
+	// 		max-width: 90rem;
+	// 	}
+
+	// 	@include respond(l2) {
+	// 		max-width: 50rem;
+	// 	}
+
+	// 	@include respond(l0) {
+	// 		max-width: 88vw;
+	// 	}
+
+	// 	// Add vertical gutter to the row
+	// 	&:not(:last-child) {
+	// 		margin-bottom: $gutter-vertical;
+	// 	}
+
+	// 	@include clearfix;
+
+	// 	// Add horizontal gutter to each column
+	// 	[class^="col-"] {
+	// 		float: left;
+
+	// 		// Make all columns the same height
+	// 		height: 100%;
+
+	// 		// Make ever column into its own row
+	// 		@include respond(l2) {
+	// 			width: 100% !important;
+	// 		}
+	// 	}
+
+	// 	.col-image {
+	// 		width: calc((100% - #{$gutter-horizontal}) * .45);
+	// 	}
+
+	// 	.col-detail {
+	// 		width: calc((100% - #{$gutter-horizontal}) * .55);
+
+	// 		@include respond(l2) {
+	// 			margin-bottom: 3rem;
+	// 		}
+	// 	}
+}

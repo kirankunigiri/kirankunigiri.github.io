@@ -1,0 +1,209 @@
+// Variables
+$text-color: #1c1c1c;
+
+// Header Background, uses unique CSS to prevent overflow problems
+// First wrapper is absolute to contain width from overflowing
+// Second wrapper is relative to ensure the background position is relative and normal
+.header-bg-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 200vh;
+	overflow: hidden;
+	pointer-events: none;
+
+	&-2 {
+		position: relative;
+	}
+}
+
+.header-bg {
+	background-image: url(../img/wc-blue.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	opacity: .2;
+
+	position: absolute;
+	height: 240vh;
+	width: 240vh;
+
+	bottom: -125rem;
+	left: 45%;
+	transform: translate(-50%, 0%);
+
+	z-index: -1;
+	animation: fadeInBackground 3s ease both;
+}
+
+// Header
+.header {
+	height: 100vh;
+	position: relative;
+	overflow-x: hidden;
+	overflow-y: visible;
+
+	// Text Content Box
+	&__content {
+		@include absCenter;
+		text-align: center;
+		width: 100vw;
+		font-family: sf_pro_displayheavy;
+	}
+
+	&__line-pre {
+		font-size: 7.8rem;
+		margin-bottom: -2.5rem;
+
+		@include respond(l2) {
+			font-size: 4rem;
+		}
+	}
+
+	&__line-main {
+		font-size: 11rem;
+
+		.im-text {
+			display: inline-block;
+			// animation: slide-left 1.2s ease .4s both;
+		}
+
+		// A container for the text. Used for the startup scale animation.
+		& .name-container {
+			display: inline-block;
+			animation: scaleUp 2s ease .3s both;
+		}
+
+		& .name-text {
+			color: transparent;
+			background: url(../img/wc-blue-name.png) center center, linear-gradient($text-color, $text-color);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-clip: text;
+			-webkit-background-clip: text;
+			transition: all 1s ease;
+			position: relative;
+
+			backface-visibility: hidden;
+			// Switch between 2s and 3s for experimentation
+			animation: waveTitle 2s ease .6s backwards;
+			background-position-x: 0;
+			background-position-y: 0;
+
+			transition: all 1s ease both;
+			background-size: 120%;
+			-webkit-background-origin: center;
+
+			&:hover {
+				background-size: 140%;
+				background-position-x: 50%;
+			}
+
+			// Leave for a black text background
+			// &::after {
+			// 	content: "Kiran Kunigiri";
+			// 	position: absolute;
+			// 	top: 0;
+			// 	left: 0;
+			// 	color: $text-color;
+			// 	background: none;
+			// 	z-index: -1;
+			// }
+
+		}
+
+		@include respond(l2) {
+			font-size: 5rem;
+			margin: 2rem 0;
+		}
+	}
+
+	&__line-sub {
+		font-size: 4.3rem;
+		color: $text-color;
+		margin-top: -1rem;
+
+		@include respond(l2) {
+			font-size: 3.1rem;
+		}
+	}
+
+	// TODO: Animate logo to enlarge like app dock
+	&__logo-bar {
+		margin-top: 1.5rem;
+		height: 10rem;
+	}
+}
+
+// Button
+.btn:link,
+.btn:visited {
+	text-decoration: none;
+	display: inline-block;
+	border-radius: 10rem;
+	position: relative;
+}
+
+.btn-more {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 2rem;
+
+	color: white;
+	background-color: rgba(blue, .5);
+	padding: 1rem 4rem;
+	transition: all .3s;
+
+	border: solid rgba(blue, .5);
+	border-width: 0px;
+
+	&:hover {
+		color: rgba(blue, .5);
+		border-width: 4px;
+		background-color: rgba(blue, .06);
+	}
+}
+
+// Animations
+@keyframes waveTitle {
+	0% {
+		background-position-x: -55vw;
+		background-position-y: -50px;
+	}
+
+	100% {
+		background-position-x: 0;
+		background-position-y: 0;
+	}
+}
+
+@keyframes fadeInBackground {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: .2;
+	}
+}
+
+@keyframes scaleUp {
+	0% {
+		transform: scale(0);
+	}
+
+	100% {
+		transform: scale(1.0);
+	}
+}
+
+@keyframes slide-left {
+	0% {
+		transform: translateX(20vw);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}

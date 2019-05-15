@@ -1,0 +1,37 @@
+@font-face {
+    font-family: 'sf_pro_displaybold';
+    src: url('fonts/sf-pro-display-bold-webfont.woff2') format('woff2'),
+         url('fonts/sf-pro-display-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'sf_pro_displayheavy';
+    src: url('fonts/sf-pro-display-heavy-webfont.woff2') format('woff2'),
+         url('fonts/sf-pro-display-heavy-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.heading {
+	margin: 0 auto;
+	font-family: sf_pro_displayheavy;
+	text-align: center;
+}
+
+.heading-primary {
+	margin: 0 auto;
+	font-size: 7rem;
+	font-family: sf_pro_displayheavy;
+	margin-bottom: 5.5rem;
+	text-align: center;
+}
+
+.heading-secondary {
+	margin: 0 auto;
+	font-size: 4rem;
+	font-family: sf_pro_displayheavy;
+	margin-top: -5rem;
+	text-align: center;
+}

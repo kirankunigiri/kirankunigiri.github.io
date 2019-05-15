@@ -1,0 +1,70 @@
+.status-box {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+
+	max-width: 70rem;
+	margin: 0 auto;
+	// padding-bottom: 10rem;
+
+	@include respond(l2) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+	&__left {
+		margin-top: 1.4rem;
+	}
+
+	&__right {
+		margin-left: 4rem;
+
+		@include respond(l2) {
+			margin-left: 0;
+			margin-top: 3rem;
+			width: 80%;
+		}
+
+		& span {
+			color: #f17338;
+
+			background: linear-gradient(0deg, currentcolor, currentcolor) bottom center no-repeat;
+			background-size: 0px 2px;
+			transition: 0.5s;
+			text-decoration: none;
+
+			&:hover {
+				background-size: 100% 2px;
+			}
+		}
+	}
+
+	&__profile-img {
+		height: 10rem;
+		width: 10rem;
+		margin: 0 2rem;
+		border-radius: 1000rem;
+		background-image: url("../img/profile.jpg");
+		background-size: cover;
+		background-position: center;
+
+		border: 3px solid #0A3671;
+		box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.20);
+	}
+
+	&__location {
+		font-family: sf_pro_displaybold;
+		text-align: center;
+		margin-top: 1rem;
+		font-size: 1.8rem;
+	}
+
+	&__title {
+		font-size: 4rem;
+	}
+
+	&__description {
+		font-size: 2rem;
+	}
+}

@@ -1,0 +1,70 @@
+@mixin clearfix {
+	&::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
+
+@mixin absCenter {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+
+/* Media Query Manager
+
+0-600px:		Phone
+600-900px:		Tablet Portrait
+900-1200px:		Tablet Landscape
+1200-1800:		Apply normal styles
+1800px+:		Big Desktop
+
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+
+// Divide number of pixels by 16 to obtain em
+@mixin respond($breakpoint) {
+
+	// Smaller Phone
+	@if $breakpoint == l0 {
+		@media only screen and (max-width: 30em) { @content };	// 480px
+	}
+
+	// Phone
+	@if $breakpoint == l1 {
+		@media only screen and (max-width: 37.5em) { @content };	// 600px
+	}
+
+	// Phone 2
+	@if $breakpoint == l2p5 {
+		@media only screen and (max-width: 46.8em) { @content };	// 600px
+	}
+
+	// Tab-Port
+	@if $breakpoint == l2 {
+		@media only screen and (max-width: 53.12em) { @content };	// 850px
+	}
+
+	// In-Between
+	@if $breakpoint == l3 {
+		@media only screen and (max-width: 62.5em) { @content };	// 1000px
+	}
+
+	// Tab-Land
+	@if $breakpoint == l4 {
+		@media only screen and (max-width: 75em) { @content };		// 1200px
+	}
+
+	// Tab-Land
+	@if $breakpoint == l5 {
+		@media only screen and (max-width: 92.5em) { @content };		// 1480px
+	}
+}

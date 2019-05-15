@@ -1,0 +1,185 @@
+// Main Skill - unique attributes
+.skill {
+	display: flex;
+	flex-direction: row;
+	color: white;
+
+	@include respond(l2) {
+		flex-direction: column;
+		align-items: center;
+		text-align: center;
+	}
+
+		// Unique Card Attributes
+		&--web-developer &-content {
+			background-image: linear-gradient(170deg, #0A66C2 4%, #5192FF 99%);
+		}
+
+		&--web-developer &-related {
+			background: #0966C2;
+		}
+	
+		&--iOS-developer &-content {
+			background-image: linear-gradient(-180deg, #2A7DA0 0%, #134767 100%);
+		}
+
+		&--iOS-developer &-related {
+			background: #164E6F;
+		}
+	
+		&--computer-science &-content {
+			background-image: linear-gradient(to top, #2B2E91 0%, #6F44EA 100%);
+		}
+
+		&--computer-science &-related {
+			background: #5A3DCE;
+		}
+	
+		&--UI-designer &-content {
+			// background-image: linear-gradient(-174deg, #035579 0%, #000000 100%);
+			background-image: linear-gradient(174deg, #783400 0%, #000000 100%);
+		}
+
+		&--UI-designer &-related {
+			background: #352603;
+		}
+
+		&--video-editor &-content {
+			background-image: linear-gradient(-180deg, #420074 0%, #1F0040 100%);
+		}
+
+		&--video-editor &-related {
+			background: #590799;
+		}
+
+		&--music-composer &-content {
+			background-image: linear-gradient(-189deg, #E87B35 0%, #E74335 99%);
+		}
+
+		&--music-composer &-related {
+			background: #F44E1E;
+		}
+		
+		&--music-composer &-content__logo {
+			height: 80%;
+		}
+}
+
+
+
+// Left Side - Content
+.skill-content {
+	width: 61%;
+	padding: 2.3rem 3rem;
+	padding-top: 1.8rem;
+	padding-right: 3.2rem;
+	z-index: 2;
+
+	// Style
+	background-image: linear-gradient(-170deg, #0A66C2 4%, #5192FF 99%);
+	box-shadow: 2px 4px 26px 0 rgba(0, 0, 0, 0.30);
+	border-radius: .8rem 0 0 .8rem;
+	display: flex;
+	align-items: center;
+
+	// Responsive
+	@include respond(l2) {
+		width: 100%;
+		border-radius: .8rem;
+	}
+
+	&__logo {
+		height: 100%;
+		margin-right: 2rem;
+
+		// Fixed width for flexbox item
+		flex-basis: 9rem;
+		flex-grow: 0;
+		flex-shrink: 0;
+
+		// Background Image
+		background-image: url(../img/ui-design.svg);
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center;
+
+		// Hide image to be responsive
+		@include respond(l2) {
+			display: none;
+		}
+	}
+
+	&__title {
+		font-size: 2.6rem;
+		margin-bottom: .5rem;
+		text-transform: capitalize;
+	}
+
+	&__description {
+		font-size: 1.6rem;
+		line-height: 2rem;
+	}
+	
+}
+
+
+
+// Right Side - Related Skills
+.skill-related {
+	width: 39%;
+	padding: 2.4rem 3rem;
+
+	// Center text vertically
+	display: flex;
+    align-items: center;
+
+	// Style
+	background: #0966C2;
+	box-shadow: 0 0 40px 0 rgba(0, 0, 0, 0.30);
+	border-radius: 0 .8rem .8rem 0;
+
+	// Responsive
+	@include respond(l2) {
+		margin-top: -.6rem;
+		padding-bottom: 1.6rem;
+		width: 80%;
+		border-radius: 0 0 .8rem .8rem;
+	}
+
+	&__container {
+		margin-top: -.5rem;
+	}
+
+	&__title {
+		font-size: 2.6rem;
+		margin-bottom: .3rem;
+
+		@include respond(l2) {
+			visibility: hidden;
+			font-size: 0;
+			display: inline;
+		}
+	}
+
+	&__title::after {
+		content: "Related Skills: ";
+		visibility: hidden;
+		display: none;
+		font-size: 1.6rem;
+		
+		@include respond(l2) {
+			visibility: visible;
+			display: inline;
+		}
+	}
+
+	&__description {
+		font-size: 1.6rem;
+		line-height: 2rem;
+
+		@include respond(l2) {
+			font-size: 1.6rem;
+			display: inline;
+		}
+	}
+}

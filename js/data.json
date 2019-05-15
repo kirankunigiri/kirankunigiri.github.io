@@ -1,0 +1,86 @@
+{
+	"skills": [
+		{
+			"id": "computer-science",
+			"description": "Fluent in Python, Java, Javascript, Swift, and Objective-C. Currently mastering the art of data structures and algorithms.",
+			"related": "JavaScript, HTML/CSS, SASS, ReactJS, React Native, GSAP, MongoDB, Mongoose"
+		},
+		{
+			"id": "web-developer",
+			"description": "I make pixel-perfect websites with HTML, CSS, SASS, JavaScript, React, and more. I'm constantly learning new technologies and tools to work with.",
+			"related": "JavaScript, HTML/CSS, SASS, ReactJS, React Native, GSAP, MongoDB, Mongoose"
+		},
+		{
+			"id": "iOS-developer",
+			"description": "I have 4 apps on the iOS and Mac App Store with over 12,000 downloads, ranging from task management to video editing tools.",
+			"related": "Swift, Objective-C, Xcode, Instruments, Alamofire, Peer Connectivity, Animation, Storyboard/Autolayout"
+		},
+		{
+			"id": "UI-designer",
+			"description": "I design all of my own apps and websites in Sketch, with over 10 different responsive designs and Sketch prototypes.",
+			"related": "Sketch, Adobe Illustrator, After Effects, Framer, Principle, HTML/CSS, SASS, etc."
+		},
+		{
+			"id": "music-composer",
+			"description": "I've played the guitar for 6 years and make my own songs in my free time. You can listen to them on my Soundcloud page.",
+			"related": "Guitar, Garageband, Logic Pro, FL Studio, Music Theory, Creating Sheet Music, etc."
+		},
+		{
+			"id": "video-editor",
+			"description": "I’ve made educational videos, VFX, YouTube animations, and more. Currently maintaining a YouTube channel with 24,000+ subscribers",
+			"related": "Adobe After Effects, Premiere Pro, Character Animator, Animation, Motion Graphics"
+		}
+	],
+	"projects": [
+		{
+			"id": "video-compare",
+			"description": "An awesome video player that lets video editors compare multiple takes of a scene at the same time. Drag in as many shots as you want, and the app displays it in a neat grid view. For macOS.",
+			"links": [
+				{
+					"title": "Trailer Video",
+					"url": "https://youtu.be/TR098OT56VI"
+				},
+				{
+					"title": "App Store",
+					"url": "https://itunes.apple.com/us/developer/prasad-kunigiri/id1030899230"
+				}
+			]
+		},
+		{
+			"id": "color-cabinet",
+			"description": "An advanced color management app for iOS and Mac. Use advanced gestures for precise color control on your phone, and see it update live on your Mac app with apps like Sketch, Photoshop, and more.",
+			"links": [{
+				"title": "Website",
+				"url": "http://kirankunigiri.com/colorcabinet"
+			},
+			{
+				"title": "App Store",
+				"url": "https://itunes.apple.com/app/id1212104150"
+			}]
+		},
+		{
+			"id": "apple-family",
+			"description": "A simple framework that brings Apple devices together, just like a family. Automatically switches between bluetooth, wifi, and USB to connect and communicate with other Apple devices. For iOS and macOS",
+			"links": [{
+				"title": "Github Project",
+				"url": "https://github.com/kirankunigiri/Apple-Family"
+			}]
+		},
+		{
+			"id": "github",
+			"description": "There’s plenty more on my GitHub, including a JavaFX animation library, iOS animated UI components, hackathon winning projects, and more. See them at github.com/kirankunigiri",
+			"links": [{
+				"title": "My Github Page",
+				"url": "https://github.com/kirankunigiri"
+			}]
+		},
+		{
+			"id": "hackathons",
+			"description": "I’ve made projects at several hackathons, including PenApps, Make Hacks, HackingEDU, Angel Hacks, HS Hacks II, and Hack Gen Y. You can see them on my Devpost Page here.",
+			"links": [{
+				"title": "Devpost Profile",
+				"url": "https://devpost.com/XenonXYZ"
+			}]
+		}
+	]
+}
