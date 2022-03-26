@@ -7,7 +7,7 @@
 		},
 		{
 			"id": "web-developer",
-			"description": "I make pixel-perfect websites with HTML, CSS, SASS, JavaScript, React, and more. I'm constantly learning new technologies and tools to work with.",
+			"description": "I make pixel-perfect fullstack web applications. I'm constantly learning new technologies and tools to work with.",
 			"related": "JavaScript, HTML/CSS, SASS, ReactJS, React Native, GSAP, MongoDB, Mongoose"
 		},
 		{
@@ -27,7 +27,7 @@
 		},
 		{
 			"id": "video-editor",
-			"description": "I’ve made educational videos, VFX, YouTube animations, and more. Currently maintaining a YouTube channel with 24,000+ subscribers",
+			"description": "I’ve made educational videos, VFX, YouTube animations, and more. Currently maintaining a YouTube channel with 29,000+ subscribers",
 			"related": "Adobe After Effects, Premiere Pro, Character Animator, Animation, Motion Graphics"
 		}
 	],
