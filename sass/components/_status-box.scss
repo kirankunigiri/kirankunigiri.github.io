@@ -27,11 +27,11 @@
 		}
 
 		& span {
-			color: #f17338;
+			color: #005F9C; // Old color: #f17338
 
 			background: linear-gradient(0deg, currentcolor, currentcolor) bottom center no-repeat;
 			background-size: 0px 2px;
-			transition: 0.5s;
+			transition: 0.4s;
 			text-decoration: none;
 
 			&:hover {

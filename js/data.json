@@ -67,6 +67,17 @@
 			}]
 		},
 		{
+			"id": "journal-app",
+			"description": "A brand new journaling app with mood tracking, tags, analytics, and more! This React application was made in a single day, and is coming soon to iOS and Android with even more features.",
+			"links": [{
+				"title": "Open Journal App",
+				"url": "https://kirankunigiri.com/journal-app/"
+			},{
+				"title": "GitHub Repo",
+				"url": "https://github.com/kirankunigiri/journal-app"
+			}]
+		},
+		{
 			"id": "github",
 			"description": "There’s plenty more on my GitHub, including a JavaFX animation library, iOS animated UI components, hackathon winning projects, and more. See them at github.com/kirankunigiri",
 			"links": [{

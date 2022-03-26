@@ -23,10 +23,14 @@
   },
   "homepage": "https://github.com/kirankunigiri/kirankunigiri.github.io#readme",
   "devDependencies": {
-    "autoprefixer": "^9.7.2",
+    "autoprefixer": "^10.4.4",
     "concat": "^1.0.3",
-    "node-sass": "^4.13.1",
+    "live-server": "^1.2.1",
+    "node-sass": "^7.0.1",
     "npm-run-all": "^4.1.5",
-    "postcss-cli": "^6.1.3"
+    "postcss-cli": "^9.1.0"
+  },
+  "dependencies": {
+    "atvimg": "^0.0.4"
   }
 }

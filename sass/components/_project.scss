@@ -40,6 +40,14 @@ $border-radius: 1.5rem;
 		background: #fff867;
 	}
 
+	&--journal-app .project-main__left {
+		background: #2d2279;
+	}
+
+	&--journal-app .project-main__right {
+		background: #6255b9;
+	}
+
 	&--github .project-main__left {
 		background: #000000;
 	}
