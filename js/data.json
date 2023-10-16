@@ -2,17 +2,17 @@
 	"skills": [
 		{
 			"id": "computer-science",
-			"description": "Fluent in Python, Java, Javascript, Swift, and Objective-C. Currently mastering the art of data structures and algorithms.",
+			"description": "Fluent in Typescript/JS, Python, Java, Swift, Objective-C. Currently building machine learning applications.",
 			"related": "Algorithms and Data Structures, Java, JavaScript, Python, Swift, Objective-C"
 		},
 		{
 			"id": "web-developer",
 			"description": "I make pixel-perfect fullstack web applications. I'm constantly learning new technologies and tools to work with.",
-			"related": "JavaScript, HTML/CSS, SASS, ReactJS, React Native, GSAP, MongoDB, Mongoose"
+			"related": "Typescript/JS, HTML/CSS, SASS, ReactJS, React Native, MongoDB, GraphQL"
 		},
 		{
 			"id": "iOS-developer",
-			"description": "I have 4 apps on the iOS and Mac App Store with over 12,000 downloads, ranging from task management to video editing tools.",
+			"description": "I have 4 apps on the iOS and Mac App Store with over 15,000 downloads, ranging from task management to video editing tools.",
 			"related": "Swift, Objective-C, Xcode, Instruments, Alamofire, Peer Connectivity, Animation, Storyboard/Autolayout"
 		},
 		{
